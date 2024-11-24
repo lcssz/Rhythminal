@@ -109,7 +109,7 @@ const Rhythminal = struct {
                     if (key.matches(hit_key, .{})) {
                         // Check for notes at the bottom of the screen
                         for (self.game_state.notes.items) |*note| {
-                            if (note.column == column and note.row >= 10 and !note.hit) {
+                            if (note.column == column and note.row >= 14 and !note.hit) {
                                 note.hit = true;
                                 self.game_state.score += 100;
                                 break;
